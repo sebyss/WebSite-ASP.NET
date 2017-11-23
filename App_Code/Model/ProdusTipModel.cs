@@ -16,7 +16,7 @@ public class ProdusTipModel
             db.ProdusTips.Add(produstip);
             db.SaveChanges();
 
-            return produstip.Name + "was succesfully inserted";
+            return produstip.Name + " was succesfully inserted";
         }
         catch (Exception e)
         {
@@ -36,7 +36,7 @@ public class ProdusTipModel
             p.Name = produstip.Name;
 
             db.SaveChanges();
-            return produstip.Name + "was succesfully updated";
+            return produstip.Name + " was succesfully updated";
 
         }
         catch (Exception e)
@@ -56,7 +56,7 @@ public class ProdusTipModel
             db.ProdusTips.Remove(produstip);
             db.SaveChanges();
 
-            return produstip.Name + "was succesfully deleted";
+            return produstip.Name + " was succesfully deleted";
         }
         catch (Exception e)
         {
