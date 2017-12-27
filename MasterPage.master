@@ -20,11 +20,34 @@
             </div>
             <div id="bmeniu">
                 <ul id="bmenu">
-                    <li><asp:HyperLink ID="Produse" runat="server">Produse</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="Despre" runat="server" NavigateUrl="~/About.aspx">Despre</asp:HyperLink></li>
+                    
+                    <li><asp:HyperLink CssClass="test" ID="Produse" runat="server" NavigateUrl="~/Pages/Produse.aspx">Produse</asp:HyperLink></li>
+                    <li><asp:HyperLink CssClass="test" ID="Despre" runat="server" NavigateUrl="~/About.aspx" Width="80px">Despre</asp:HyperLink></li>
+
+
+                    <li>
+
+                     <asp:HyperLink CssClass="test" ID="Management" runat="server" NavigateUrl="~/Pages/Angajati/Management.aspx" Width="149px">Management</asp:HyperLink>
+                     <asp:HyperLink CssClass="test" ID="account" runat="server" NavigateUrl="~/Pages/Cont.aspx" Width="149px">Contul meu</asp:HyperLink>
+
+                    </li>
+                    
+                    <li style="float:right">
+
+                        <asp:HyperLink CssClass="test" runat="server" ID="register" NavigateUrl="~/Pages/Account/Register.aspx" Width="157px">Inregistrare</asp:HyperLink>
+                        <asp:HyperLink CssClass="test" runat="server" ID="litStatus" NavigateUrl="~/Pages/Cos.aspx"></asp:HyperLink>
+                        
+                    </li>
+
+                    <li style="float:right">
+                        <asp:HyperLink CssClass="test" runat="server" ID="login" NavigateUrl="~/Pages/Account/Login.aspx" Width="133px">Conectare</asp:HyperLink>
+                        <asp:LinkButton CssClass="test" ID="logout" runat="server" OnClick="logout_Click">Iesre</asp:LinkButton>
+                        
+                    </li>
+
                 </ul>
             </div>
-            <div id="content"></div>
+           
 
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         

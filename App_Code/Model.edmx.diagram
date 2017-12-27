@@ -5,12 +5,21 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d1ca1809a5814badbfe7843904fedf6b" Name="Diagram1">
-        <EntityTypeShape EntityType="FarmacieModel.Co" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FarmacieModel.Co" Width="1.625" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="FarmacieModel.Produ" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="FarmacieModel.ProdusTip" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="FarmacieModel.FK_Cos_Produs" ManuallyRouted="false" />
         <AssociationConnector Association="FarmacieModel.FK_Produs_ProdusTip" ManuallyRouted="false" />
         <EntityTypeShape EntityType="FarmacieModel.sysdiagram" Width="1.5" PointX="7.5" PointY="1.125" />
+        <EntityTypeShape EntityType="FarmacieModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="4.75" />
+        <EntityTypeShape EntityType="FarmacieModel.AspNetRole" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="FarmacieModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="5" />
+        <EntityTypeShape EntityType="FarmacieModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="7.75" />
+        <EntityTypeShape EntityType="FarmacieModel.AspNetUser" Width="1.5" PointX="3" PointY="5.375" />
+        <AssociationConnector Association="FarmacieModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="FarmacieModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="FarmacieModel.AspNetUserRoles" />
+        <EntityTypeShape EntityType="FarmacieModel.UserInfo" Width="1.5" PointX="9.875" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -20,10 +20,15 @@
 <p>
     <asp:TextBox ID="txtpret" runat="server"></asp:TextBox>
 </p>
+    <p>
+        Stoc:</p>
+    <p>
+        <asp:TextBox ID="textStoc" runat="server"></asp:TextBox>
+</p>
 <p>
     Imagine:</p>
 <p>
-    <asp:DropDownList ID="dropimg" runat="server" OnSelectedIndexChanged="dropimg_SelectedIndexChanged">
+    <asp:DropDownList ID="dropimg" runat="server" OnSelectedIndexChanged="Dropimg_SelectedIndexChanged">
     </asp:DropDownList>
 </p>
 <p>
@@ -34,7 +39,7 @@
 <p>
     &nbsp;</p>
 <p>
-    <asp:Button ID="realizprod" runat="server" Text="Realizat" OnClick="realizprod_Click" />
+    <asp:Button ID="realizprod" runat="server" Text="Realizat" OnClick="Realizprod_Click" />
 </p>
 <p>
     <asp:Label ID="lblprod" runat="server"></asp:Label>

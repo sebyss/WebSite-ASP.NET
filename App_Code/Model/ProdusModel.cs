@@ -16,7 +16,7 @@ public class ProdusModel
             db.Produs.Add(produs);
             db.SaveChanges();
 
-            return produs.Name + "was succesfully inserted";
+            return produs.Name + " was succesfully inserted";
         }
         catch (Exception e)
         {
@@ -38,9 +38,10 @@ public class ProdusModel
             p.TypeID = produs.TypeID;
             p.Description = produs.Description;
             p.Image = produs.Image;
+            p.Stoc = produs.Stoc;
 
             db.SaveChanges();
-            return produs.Name + "was succesfully updated";
+            return produs.Name + " was succesfully updated";
 
         }
         catch (Exception e)
@@ -60,11 +61,60 @@ public class ProdusModel
             db.Produs.Remove(produs);
             db.SaveChanges();
 
-            return produs.Name + "was succesfully deleted";
+            return produs.Name +  "was succesfully deleted";
         }
         catch (Exception e)
         {
             return "Error:" + e;
+        }
+    }
+
+    public Produ GetProdus(int id)
+    {
+        try
+        {
+            using (FarmacieEntities db = new FarmacieEntities())
+            {
+                Produ produs = db.Produs.Find(id);
+                return produs;
+            }
+        }
+        catch (Exception)
+        {
+            return null;
+        }
+    }
+
+    public List<Produ> GetAllProduse()
+    {
+        try
+        {
+            using (FarmacieEntities db = new FarmacieEntities())
+            {
+                List<Produ> produse = (from x in db.Produs select x).ToList();
+                return produse;
+            }
+        }
+
+        catch(Exception)
+        {
+            return null;
+        }
+    } 
+
+    public List<Produ> GetProdCateg(int cat)
+    {
+        try
+        {
+            using (FarmacieEntities db = new FarmacieEntities())
+            {
+                List<Produ> produse = (from x in db.Produs where x.TypeID == cat select x).ToList();
+                return produse;
+            }
+        }
+        catch(Exception)
+        {
+            return null;
         }
     }
 }

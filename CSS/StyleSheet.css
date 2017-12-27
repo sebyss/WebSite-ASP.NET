@@ -8,20 +8,21 @@
 
 #wrapper
 {
-    width: 1100px;
+    width: 1124px;
     margin: auto;
     padding-bottom: 20px;
     background-color: white;
+    height: 398px;
 }
 
 #logo
 {
-    
+    color:aliceblue;
 }
 
 #bmenu {
-    height: 45px;
-    background: linear-gradient(to top, #4192f4, #ffffff);
+    height: 77px;
+    width: 1015px;
 }
 
 #bmeniu
@@ -43,6 +44,7 @@
     text-transform: uppercase;
     padding: 0px 20px 0px 20px;
     border-left: 1px solid #FFFFFF;
+    width: 139px;
 }
 
 #bmenu a:link , #bmenu a :visited, #bmenu a:active 
@@ -50,6 +52,7 @@
     display: block;
     color: #574c3f;
     text-decoration: none;
+    margin-left: 0px;
 }
 
 #bmenu a:hover {
@@ -61,3 +64,136 @@
     padding: 20px;
     min-height: 400px;
 }
+
+#ContentPlaceHolder1_pnlProduse div {
+    float: left;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.imgProdus
+{
+    width: 150px;
+    height: 150px;
+    vertical-align: central;
+    padding:10px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius:50px;
+
+}
+
+.numeProd
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produsPret
+{
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+.imgagine{
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.descriere{
+    width: 400;
+    font-style:italic;
+}
+
+.pret{
+    font-size: 24px;
+    font-style: bold;
+}
+
+.buton{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    clear: both;
+    background: linear-gradient(to bottom, darkgreen, green)
+}
+.inputs{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: lightseagreen;
+    background: -moz-linear-gradient(top, #FFF , lightseagreen);
+    background: -webkit-gradient(linear , left top, left bottom , color-stop(0.0, #FFF),color-stop(1.0, lightseagreen));
+    border: 1px solid #CACACA;
+    color: deepskyblue;
+    margin: 0 0 25px;
+    padding: 5px 9px;
+    width: 260px;
+}
+
+.inputs:focus{
+    background: #FFF;
+    -webkit-box-shadow: 0 0 25px #CCC;
+    -moz-box-shadow: 0 0 25px #ccc;
+    box-shadow: 0 0 25px #CCC;
+}
+
+.test {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+    .test:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+    }
+
+/*Cos*/
+.cartTable {
+    text-align: center;
+    border: 15px solid #3cb0fd;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+    .cartTable input {
+        width: 65px;
+        height: 65px;
+    }
+
+    .cartTable h4 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .cartTable tr td select {
+        width: 100px;
+    }
+
+
+
+
